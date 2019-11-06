@@ -32,7 +32,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= site_url('supplier') ?>" class="nav-link <?=$this->uri->segment(1) == 'supplier' || $this->uri->segment(1) == '' ? 'active' : ''?>">
+            <a href="<?= site_url('supplier') ?>" class="nav-link <?=$this->uri->segment(1) == 'supplier' ? 'active' : ''?>">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Supplier
@@ -104,15 +104,15 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+                <a href="<?= site_url('laporanbarangmasuk') ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Migguan</p>
+                  <p>Laporan Barang Masuk</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="pages/layout/boxed.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Bulanan</p>
+                  <p>Laporan Barang Keluar</p>
                 </a>
               </li>
             </ul>
