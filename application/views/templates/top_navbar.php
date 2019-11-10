@@ -55,7 +55,7 @@
       </li>
       <!--- logout -->
       <li class="nav-item">
-        <a class="nav-link" href="<?= site_url('login/logout'); ?>">
+        <a class="nav-link" href="#">
           <i class="fa fa-sign-in-alt"></i>
         </a>
       </li>

@@ -14,7 +14,7 @@
           <img src="<?= site_url('assets/') ?>dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block"><?= $this->session->userdata('username'); ?></a>
+          <a href="#" class="d-block">Robby</a>
         </div>
       </div>
 
@@ -32,7 +32,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= site_url('supplier') ?>" class="nav-link <?=$this->uri->segment(1) == 'supplier' ? 'active' : ''?>">
+            <a href="<?= site_url('supplier') ?>" class="nav-link <?=$this->uri->segment(1) == 'supplier' || $this->uri->segment(1) == '' ? 'active' : ''?>">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Supplier
@@ -104,15 +104,15 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?= site_url('laporanbarangmasuk') ?>" class="nav-link">
+                <a href="pages/layout/top-nav.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Laporan Barang Masuk</p>
+                  <p>Migguan</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="pages/layout/boxed.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Laporan Barang Keluar</p>
+                  <p>Bulanan</p>
                 </a>
               </li>
             </ul>
